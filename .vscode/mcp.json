@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "blender-mcp": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "server.py"],
+      "env": {
+        "BLENDER_HOST": "localhost",
+        "BLENDER_PORT": "9876"
+      }
+    }
+  }
+}
