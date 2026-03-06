@@ -1,0 +1,31 @@
+[project]
+name = "blender-mcp"
+version = "1.0.0"
+description = "Connect VSCode AI chat (Claude / GitHub Copilot) to Blender via the Model Context Protocol"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "blender_mcp" }
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcp[cli]>=1.3.0",
+]
+
+[tool.setuptools]
+py-modules = ["server"]
+
+[project.scripts]
+blender-mcp = "server:main"
+
+[project.urls]
+"Homepage" = "https://github.com/willowduster/blender_mcp"
+"Bug Tracker" = "https://github.com/willowduster/blender_mcp/issues"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
